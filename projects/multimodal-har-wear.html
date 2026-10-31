@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimodal HAR with Video & IMU Fusion – Sharmad Kalpande</title>
+  <meta name="description"
+    content="Deep learning pipeline for multimodal Human Activity Recognition fusing IMU signals and egocentric video features for the 3rd WEAR Dataset Challenge @ HASCA." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=2" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="../index.html#about" class="nav-link">About Me</a></li>
+        <li><a href="../index.html#academics" class="nav-link">Academia</a></li>
+        <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+        <li><a href="../index.html#publications" class="nav-link">Publications</a></li>
+        <li><a href="../internships.html" class="nav-link">Internships</a></li>
+        <li><a href="../index.html#awards" class="nav-link">Grants & Awards</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="project-detail-page">
+    <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+
+    <div class="project-detail-hero">
+      <h1>Multimodal Human Activity Recognition with Video & IMU Sensor Fusion</h1>
+      <div class="project-detail-meta">
+        <span>📅 2026</span>
+        <span>🏆 Kaggle Challenge</span>
+        <span>🏛️ HASCA @ ACM UbiComp / ISWC</span>
+      </div>
+      <div class="project-detail-tags">
+        <span class="tag">Kaggle Challenge</span>
+        <span class="tag">Human Activity Recognition</span>
+        <span class="tag">Multimodal Fusion</span>
+        <span class="tag">IMU &amp; Video</span>
+        <span class="tag">Deep Learning</span>
+      </div>
+    </div>
+
+    <div class="project-detail-section">
+      <h2>Overview</h2>
+      <p>
+        Developed an end-to-end deep learning pipeline for multimodal Human Activity Recognition (HAR) as part of the
+        <strong>3rd WEAR Dataset Challenge @ HASCA</strong> (organized in conjunction with ACM UbiComp / ISWC). The challenge
+        requires classifying complex outdoor workout activities and distinguishing them from a dominant background "null" class
+        under naturalistic conditions.
+      </p>
+      <p>
+        The pipeline ingests and synchronizes diverse multimodal inputs, integrating high-rate <strong>inertial measurement unit (IMU)
+        signals</strong> (accelerometer and gyroscope time-series windows) with <strong>egocentric video representations</strong> (pre-extracted
+        deep visual features such as VideoMAEv2). Researched and benchmarked a variety of fusion paradigms—evaluating early feature concatenation,
+        cross-modal attention, and late decision-level fusion—while experimenting with specialized loss functions (e.g., Focal Loss and
+        weighted Cross-Entropy) to understand how different fusion mechanisms handle extreme null-class dominance and sensor complementarity.
+      </p>
+    </div>
+
+    <div class="project-detail-section">
+      <h2>Key Highlights</h2>
+      <ul>
+        <li>
+          <strong>Multimodal Deep Learning Architecture:</strong> Designed a unified pipeline bridging continuous temporal IMU sensor windows with egocentric video feature representations.
+        </li>
+        <li>
+          <strong>Cross-Modal Fusion Strategies:</strong> Explored and compared early, intermediate (cross-attention), and late fusion methodologies to examine how inertial kinematics and visual context complement each other in activity classification.
+        </li>
+        <li>
+          <strong>Loss Function & Imbalance Optimization:</strong> Experimented with customized loss formulations including <strong>Focal Loss</strong>, label smoothing, and class-weighted Cross-Entropy to counter the severe imbalance created by the prevailing null class.
+        </li>
+        <li>
+          <strong>Competitive Kaggle Benchmark:</strong> Evaluated model performance across 18 distinct physical workout exercises plus the null class under subject-disjoint validation protocols.
+        </li>
+      </ul>
+    </div>
+
+    <div class="project-detail-section">
+      <h2>Resources</h2>
+      <div class="resources-grid">
+        <a href="https://www.kaggle.com/competitions/3rd-wear-dataset-challenge-hasca-2026" target="_blank" class="resource-card">
+          <span class="resource-icon">🏆</span>
+          <div class="resource-info">
+            <span class="resource-label">Kaggle Competition</span>
+            <span class="resource-desc">3rd WEAR Dataset Challenge @ HASCA</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sharmad Kalpande. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
